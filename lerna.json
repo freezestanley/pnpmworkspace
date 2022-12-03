@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "useWorkspaces": true,
+  "version": "0.0.0",
+  "packages": [
+    "packages/add-one",
+    "packages/add-two"
+  ],
+  "publish": {
+    "verifyAccess": false,
+    "verifyRegistry": false,
+    "conventionalCommits": true
+  }
+}

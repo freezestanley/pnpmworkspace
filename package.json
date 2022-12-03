@@ -1,0 +1,24 @@
+{
+  "name": "pnpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "npx rimraf npmnode_modules && lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "st": "pnpm -r --filter add-one run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "add-one": "workspace:^1.0.0",
+    "add-two": "workspace:^1.0.0",
+    "lerna": "^6.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
